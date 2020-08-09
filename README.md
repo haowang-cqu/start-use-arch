@@ -43,3 +43,11 @@ systemctl enable bluetooth
 ```bash
 yay -U xxx.pacman
 ```
+
+### github相关域名无法正常访问
+/etc/hosts
+```bash
+199.232.68.133  githubusercontent.com
+199.232.68.133  raw.githubusercontent.com
+140.82.114.4    github.com
+```
