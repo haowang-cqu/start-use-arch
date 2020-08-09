@@ -54,6 +54,18 @@ yay -U xxx.pacman
 获取域名所对应的ip地址[ipaddress.com](ipaddress.com)
 
 ### Discover 软件中心无法工作
+
+缺少相应的可选依赖，使用 `pacman -Si` 查看可选依赖并安装
+
+packagekit-qt5: to manage packages from Arch Linux repositories
+flatpak: Flatpak packages support
+fwupd: firmware update support
+
 ```bash
-sudo pacman -S packagekit-qt5
+sudo pacman -S packagekit-qt5 flatpak fwupd
 ```
+
+### 音频问题
+
+[ArchWiki](https://wiki.archlinux.org/index.php/PulseAudio_(简体中文))
+
