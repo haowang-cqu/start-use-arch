@@ -45,9 +45,15 @@ yay -U xxx.pacman
 ```
 
 ### github相关域名无法正常访问
-/etc/hosts
+编辑/etc/hosts，添加如下内容
 ```bash
 199.232.68.133  githubusercontent.com
 199.232.68.133  raw.githubusercontent.com
 140.82.114.4    github.com
+```
+获取域名所对应的ip地址[ipaddress.com](ipaddress.com)
+
+### Discover 软件中心无法工作
+```bash
+sudo pacman -S packagekit-qt5
 ```
