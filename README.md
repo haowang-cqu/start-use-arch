@@ -69,3 +69,19 @@ sudo pacman -S packagekit-qt5 flatpak fwupd
 
 [ArchWiki](https://wiki.archlinux.org/index.php/PulseAudio_(简体中文))
 
+### WPS
+```bash
+sudo pacman -S wps-office-cn wps-office-mime-cn wps-office-mui-zh-cn ttf-wps-fonts
+```
+
+### 安装字体
+
+```bash
+# 带nerd font补丁的终端等宽字体
+sudo pacman -S nerd-fonts-meslo-lg
+# noto 全系字体
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji
+# 带nerd font补丁的fira code
+sudo pacman -S nerd-fonts-fira-code
+```
+
