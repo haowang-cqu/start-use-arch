@@ -85,3 +85,8 @@ sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji
 sudo pacman -S nerd-fonts-fira-code
 ```
 
+### qq-linux 闪退
+修改/usr/share/applications/qq.desktop
+```
+Exec=qq --no-sandbox %U
+```
