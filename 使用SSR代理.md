@@ -10,7 +10,12 @@ SSR 插件：https://github.com/Qv2ray/QvPlugin-SSR
 
 官方教程：https://qv2ray.net/getting-started/
 
-安装：`pacman -Sy v2ray qv2ray` 
+安装：
+
+```bash
+pacman -Sy v2ray qv2ray # 核心和前端
+sudo pacman -S qv2ray-plugin-ssr-dev-git # ssr支持插件
+```
 
 添加订阅：分组 - 添加订阅 - 订阅设置 - 勾选此分组是一个订阅 - 粘贴链接 - 更新订阅 - 确定
 
@@ -33,8 +38,8 @@ SSR 插件：https://github.com/Qv2ray/QvPlugin-SSR
 
 ```bash
 # 配置代理
+git config --global http.proxy http://127.0.0.1:1080
 git config --global https.proxy http://127.0.0.1:1080
-git config --global https.proxy https://127.0.0.1:1080
 # 取消代理
 git config --global --unset http.proxy
 git config --global --unset https.proxy
