@@ -22,7 +22,7 @@ echo '/swapfile none swap defaults 0 0' >> /etc/fstab
 ```
 [ArchWiki](https://wiki.archlinux.org/index.php/Swap_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
 
-这里我用 fallocate -l 8G /swapfile 创建交换文件时 swapon 会报错
+这里用 fallocate -l 8G /swapfile 创建交换文件时 swapon 会报错
 
 ### 挂载 NTFS 格式的磁盘
 ```bash
@@ -90,3 +90,32 @@ sudo pacman -S nerd-fonts-fira-code
 ```
 Exec=qq --no-sandbox %U
 ```
+
+### zsh 插件安装
+
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 语法高亮
+
+  ```bash
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+  ```
+
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) 自动补全
+
+  ```bash
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ```
+
+编辑配置文件
+
+```bash
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+```
+
+### 增强版 top
+
+```bash
+sudo pacman -S htop
+```
+
+
+
