@@ -1,0 +1,16 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p6
+UUID=f0fc0c62-2f89-4ff8-b962-6b46447f6633	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p1
+UUID=0005-77F9      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /swapfile
+/swapfile none swap defaults 0 0
+
+# windows
+/dev/nvme0n1p3  /home/bully/WIN  ntfs-3g   uid=bully,gid=bully,umask=0022    0       0
+/dev/nvme0n1p4  /home/bully/DOC  ntfs-3g   uid=bully,gid=bully,umask=0022    0       0
